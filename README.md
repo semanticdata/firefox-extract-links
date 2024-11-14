@@ -1,4 +1,4 @@
-# Link Extractor
+# 🔗 Link Extractor
 
 <!--
 ![Mozilla Add-on](https://img.shields.io/amo/v/newtab-bookmarks@semanticdata)
@@ -10,20 +10,20 @@
 
 A Firefox extension to extract all links from the current page and display them in a popup.
 
-## Installation
+## 🛠️ Installation
 
 1. Clone the repository
 2. Go to `about:debugging#addons`
 3. Click "Load Temporary Add-on"
 4. Select the cloned repository
 
-## Usage
+## ⚙️ Usage
 
 1. Navigate to a page you want to extract links from.
 2. Click the extension icon in the top right.
 3. The popup will display all links on the current page.
 
-## Recent Changes
+## 🔄 Recent Changes
 
 - Convert URLs into actual links.
 - Remove duplicate links from list.
