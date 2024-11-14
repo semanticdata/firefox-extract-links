@@ -30,6 +30,10 @@ A Firefox extension to extract all links from the current page and display them 
 - Total links count shown next to the popup title.
 - Differentiate external links with `↗`.
 
+## 🐛 Bugs
+
+- The list comes back empty if you exit the popup and click back again. The current workaround is to reload the page.
+
 ## 💡 Ideas
 
 - Filter links by domain
