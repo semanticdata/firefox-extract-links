@@ -28,6 +28,16 @@ A Firefox extension to extract all links from the current page and display them 
 - Convert URLs into actual links.
 - Remove duplicate links from list.
 
+## 💡 Ideas
+
+- Filter links by domain
+- Export links to CSV
+- Distinguish between internal and external links
+- Categorize links by content type
+- Check from broken links
+- Option to save links to a "Saved Links" list in local storage
+- Make the links list searchable
+
 ## © License
 
 Source code in this repository is available under the [MIT License](./LICENSE).
