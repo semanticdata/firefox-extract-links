@@ -1,12 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
     chrome.tabs.executeScript(
-        { code: 'Array.from(document.querySelectorAll("a")).map(a => [a.innerText, a.href])' },
+        {
+            code: `
+        const currentDomain = window.location.hostname;
+        Array.from(document.querySelectorAll("a")).map(a => [a.innerText, a.href, a.hostname !== currentDomain]);
+      ` },
         results => {
             const linksTable = document.getElementById("linksTable");
             const totalLinksElement = document.getElementById("totalLinks");
             const uniqueLinks = new Set();  // Set to track unique URLs
 
-            results[0].forEach(([text, url]) => {
+            results[0].forEach(([text, url, isExternal]) => {
                 if (!uniqueLinks.has(url)) {  // Check if URL is already added
                     uniqueLinks.add(url);       // Add URL to the Set
 
@@ -23,6 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     link.textContent = url;
                     link.target = "_blank";  // Opens link in a new tab
                     urlCell.appendChild(link);
+
+                    // Add external link symbol after the link element if it's external
+                    if (isExternal) {
+                        const externalSymbol = document.createTextNode("\u2197");  // Arrow symbol
+                        urlCell.appendChild(externalSymbol);
+                    }
                 }
             });
 
