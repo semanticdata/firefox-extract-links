@@ -26,6 +26,7 @@ A Firefox extension to extract all links from the current page and display them 
 ## Recent Changes
 
 - Convert URLs into actual links.
+- Remove duplicate links from list.
 
 ## © License
 

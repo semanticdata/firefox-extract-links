@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Link Extractor",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Extracts all links from the current page and displays them.",
     "permissions": [
         "activeTab"
