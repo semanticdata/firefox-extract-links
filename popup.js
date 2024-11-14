@@ -30,7 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     // Add external link symbol after the link element if it's external
                     if (isExternal) {
-                        const externalSymbol = document.createTextNode("\u2197");  // Arrow symbol
+                        const externalSymbol = document.createElement("span");
+                        externalSymbol.className = "external-symbol";
+                        externalSymbol.textContent = "\u2197";  // Arrow symbol
                         urlCell.appendChild(externalSymbol);
                     }
                 }
