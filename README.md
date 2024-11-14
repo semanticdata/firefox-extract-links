@@ -23,6 +23,10 @@ A Firefox extension to extract all links from the current page and display them 
 2. Click the extension icon in the top right.
 3. The popup will display all links on the current page.
 
+## Recent Changes
+
+- Convert URLs into actual links.
+
 ## © License
 
 Source code in this repository is available under the [MIT License](./LICENSE).
