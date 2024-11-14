@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "Link Extractor",
+    "version": "0.0.1",
+    "description": "Extracts all links from the current page and displays them.",
+    "permissions": [
+        "activeTab"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.ico"
+    }
+}
