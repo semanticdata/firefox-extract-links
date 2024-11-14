@@ -28,7 +28,7 @@ A Firefox extension to extract all links from the current page and display them 
 - Convert URLs into actual links.
 - Remove duplicate links from list.
 - Total links count shown next to the popup title.
-- Differentiate external links with `↗️`.
+- Differentiate external links with `↗`.
 
 ## 💡 Ideas
 
